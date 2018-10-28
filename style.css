@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imgCont {
+    position: relative;
+    min-height: 650px;
+    overflow: hidden;
+}
+
+.imgCont>div{
+    width: 100%;
+    position: absolute;
+}
+.imgCont>div>img{
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    object-fit: cover;
+}
+.allBtn {
+    width: 100%;
+    float: left;
+    position: absolute;
+    top: 45%;
+}
+
+.allBtn #next {
+    float: right;
+    background: black;
+    padding: 20px 20px;
+    border: 0;
+    opacity: 0.5;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.allBtn #prev {
+    float: left;
+    background: black;
+    padding: 20px 20px;
+    border: 0;
+    opacity: 0.5;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.allBtn #prev:focus, .allBtn #next:focus {
+    border: 0;
+    outline: 0;
+}
+
+.allBtn .fa {
+    color: white;
+    font-size: 26px;
+}
